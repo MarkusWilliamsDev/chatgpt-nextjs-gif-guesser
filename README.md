@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Random GIF Generator
 
-## Getting Started
+This is a simple Next.js website that generates a random word, searches the Giphy API for a GIF with that word, and displays the GIF on the page.
 
-First, run the development server:
+## Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Before you can run this project, you will need to have the following installed on your computer:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Node.js: You can download and install Node.js from the official website at https://nodejs.org/.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Next.js CLI: To install the Next.js CLI, open a terminal window and enter the following command:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+`npm install -g next`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Running the Project
 
-## Learn More
+To run this project on your local development server, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+Clone the repository:
+`git clone https://github.com/<your-username>/random-gif-generator.git`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Navigate to the project directory:
+`cd random-gif-generator`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Install the project dependencies:
+`npm install`
 
-## Deploy on Vercel
+Replace your-giphy-api-key with your actual Giphy API key in the API_KEY constant in the pages/index.js file.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start the development server:
+`npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This will start the development server and open your project in a new browser window at http://localhost:3000. You should see a button on the page that says "Generate new GIF", and when you click the button, a new random GIF should be displayed on the page.
+
+Customizing the Project
+You can customize this project by modifying the following:
+
+The array of possible words: By default, the project uses an array of five words (cat, dog, bird, fish, and lizard) to generate the random word. You can modify this array to include any words you like.
+
+The Giphy API key: You can use your own Giphy API key to access Giphy's content and resources. To get a Giphy API key, sign up for a Giphy account and apply for an API key on the Giphy Developers page at https://developers.giphy.com/.
+
+The style of the page: You can use CSS to style the page however you like. The project includes a simple white background and blue button, but you can modify the CSS to change the appearance of the page.
+
+Credits
+This project was created using the Next.js framework and the Giphy API.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
