@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const words = ["cat", "dog", "bird", "fish", "lizard"];
-const API_KEY = "e3VSkYg6dHt7sY4o1us0anHs6KwmtARe";
+const API_KEY = process.env.GIPHY_API_KEY;
 
 function App() {
 	const [gif, setGif] = useState(null);
